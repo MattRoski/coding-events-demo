@@ -6,8 +6,9 @@
 <header th:replace="fragments :: header"></header>
 
 <form method="post">
-    <input type="text" name="eventName">
-    <input type="text" name="eventDescription">
+<!--    the name= values must be the same name as the private fields of the Event class, since we are using model binding-->
+    <input type="text" name="name">
+    <input type="text" name="description">
     <input type="submit" value="Create">
 </form>
 
